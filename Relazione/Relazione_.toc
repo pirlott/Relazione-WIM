@@ -1,0 +1,9 @@
+\contentsline {section}{\numberline {1}Analisi Preliminare}{3}
+\contentsline {subsection}{\numberline {1.1}Struttura}{3}
+\contentsline {section}{\numberline {2}Homepage:Le 6 W}{4}
+\contentsline {subsection}{\numberline {2.1}Where?}{5}
+\contentsline {subsection}{\numberline {2.2}Who?}{5}
+\contentsline {subsection}{\numberline {2.3}Why?}{5}
+\contentsline {subsection}{\numberline {2.4}What?}{5}
+\contentsline {subsection}{\numberline {2.5}When?}{5}
+\contentsline {subsection}{\numberline {2.6}How?}{6}
