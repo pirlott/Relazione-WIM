@@ -5,6 +5,11 @@
 \usepackage{makeidx}
 \usepackage{graphicx}
 \usepackage{epigraph}
+\usepackage[colorlinks = true,
+            linkcolor = blue,
+            urlcolor  = blue,
+            citecolor = blue,
+            anchorcolor = blue]{hyperref}
 
 \geometry{left=2.5cm,right=2.5cm,top=2.5cm,bottom=3cm}
 
@@ -221,7 +226,8 @@ A causa del fenomeno di \textit{Deep Linking} ("collegamento in profondit\'a") o
 		\item \textbf{What:} cosa offre il sito\\
 		Come gi\'a spiegato sopra, risulta molto intuibile immaginare che cosa il sito offra.
 		\item \textbf{Where:} indica a che tipo di sito siamo arrivati\\
-		Risulta molto chiaro in quale sito siamo arrivati grazie a diversi fattori: il nome del sito raffigurato all'interno del logo. Il titolo \textbf{"Best books of 2016"} e il sottotitolo che fanno intuire facilmente che si tratta di un sito rivolto agli amanti dei libri. Con ancor pi\'u enfasi si pu\'o notare la cosa grazie agli svariati libri mostrati nel corpo centrale della pagina.
+		Risulta molto chiaro in quale sito siamo arrivati grazie a diversi fattori: il nome del sito raffigurato all'interno del logo. Il titolo \textbf{"Best books of 2016"} e il sottotitolo che fanno intuire facilmente che si tratta di un sito rivolto agli amanti dei libri. Con ancor pi\'u enfasi si pu\'o notare la cosa grazie agli svariati libri mostrati nel corpo centrale della pagina.\\
+		Potrebbe risultare discutibile la scelta di non utilizzare un breadcrumb, dato che potrebbe portare ad un problema di \textbf{"Lost in navigation"} (l'utente si trova smarrito). In compenso per\'o, come gi\'a spiegato in precedenza, il men\'u presente in alto all'interno dell'header e la barra di ricerca aiutano l'utente a viaggiare all'interno delle altre pagine senza particolari difficolt\'a. Sarebbe comunque stato molto pi\'u apprezzabile avere un breadcrumb che facesse intuire la posizione esatta all'interno del sito.
 	\end{itemize}	
 
 \end{enumerate}
@@ -229,9 +235,85 @@ A causa del fenomeno di \textit{Deep Linking} ("collegamento in profondit\'a") o
 
 \subsection{Pagina Specifica: Book}
 
+\begin{figure}
+	\centering 
+	\includegraphics[width=16.5cm]{resources/book.png}
+	\caption{\textbf{Pagina di un libro specifico che \'e gi\'a stato letto dall'utente.}}
+\end{figure}
+Come si pu\'o notare per ogni singolo libro c'\'e una foto che rappresenta la copertina del libro in alto a sinistra sotto il header. Sotto di essa possiamo vedere il rating che l'utente ha assegnato a quel determinato libro e a quale Scaffale esso appartenga. Si ha per\'o anche la possibilit\'a di spostare il libro all'interno di un altro scaffale, funzionalit\'a molto importante da offrire all'utente. Se il libro non \'e ancora stato letto ci\'o che viene visualizzato si nota nella \textbf{Figure 8} e si ha comunque di inserire il libro all'interno dello scaffale che si vuole. Sotto a queste informazioni possiamo trovare(se presente) una breve traccia audio del audiolibro. Cliccandoci sopra si ha la possibilit\'a di ascoltarne l'anteprima o andare sul sito di Audible ed acquistarlo.\\
+Accanto a questa informazione possiamo anche vedere in dettaglio, oltre al Titolo e l'autore, anche una descrizione del libro che ne racconta brevemente la trama. Tra il titolo e la descrizione possiamo notare alcuni dettagli molto interessanti per un utente che lo vede per la prima volta:
+
+\begin{enumerate}
+	\item Il rating medio del libro con la relativa possibilit\'a di accedere ai dettagli specifici delle votazioni.
+	\item Il numero di voti, che aiuta molto l'utente a capire da quante persone \'e stato letto il libro in questione. Cliccandoci sopra si viene trascinati nella parte inferiore della pagina dove vengono mostrate le recensioni ed i relativi voti. 
+	\item Il numero di recensioni. Una volta cliccatoci sopra succede la stessa cosa di prima: si viene trasportati nella parte inferiore della pagina, dove si possono leggere i pareri dei lettori.
+\end{enumerate}
+
+Subito dopo la descrizione della trama notiamo diverse altre informazioni utili come ad esempio il numero di pagine, la data di pubblicazione e chi lo ha pubblicato. Informazioni ancora pi\'u dettagliate le si possono trovare immediatamente sotto: titolo originale, l'ISBN, la lingua dell'edizione specifica, a quale serie quel libro appartiene, i nomi dei personaggi principali e ed i luoghi pi\'u visitati. \\Si possono inoltre esplorare tutte le diverse versioni presenti all'interno del sito e comprare una copia seguendo i link presenti sotto la sezione dei dettagli.\\
+
+\begin{figure}
+	\centering 
+	\includegraphics[width=16.5cm]{resources/book_notread.png}
+	\caption{\textbf{Sezione di una pagina di un libro che non \'e ancora stato letto.}}
+\end{figure}
+
+Nella colonna di destra possiamo notare alcuni suggerimenti offerti da Goodreads sulla base di quali altri libri hanno letto coloro a cui \'e piaciuto il libro presente nella pagina.\\ 
+Sempre nella colonna di destra possiamo osservare quali generi hanno attribuito gli utenti a questo libro. Immediatamente sotto invece possiamo informarci di pi\'u sulla vita dell'autore e quali altri libri abbia scritto. Possiamo invece anche notare una sezione dedicata agli \textbf{Sponsored Books} che non risulta essere ingombrante, soprattutto perch\'e i libri che vengono mostrati sono correlati al contenuto del libro che si sta osservando ora.\\\\
+Sotto alle informazioni principali del libro, all'interno del corpo centrale della pagina, possiamo vedere l'attivit\'a dell'utente riguardante il libro specifico \textbf{(Figure 7)}. Oltre al rating \'e presente anche la review e i diversi stati di avanzamento durante la lettura. Di fatti, Goodreads offre la possibilit\'a di lasciare un breve commento ogni volta che si aggiorna lo stato, permettendo a chiunque altro voglia leggere questo libro di capire quali sono i punti migliori o peggiori del libro. Questa sezione non viene visualizzata nel caso il libro non sia ancora stato aggiunto ad uno scaffale dell'utente \textbf{(Figure 8)}.\\
+Subito prima della sezione dedicata alle review degli utenti possiamo anche osservare una sezione dedicata all'attivit\'a degli amici relativa al libro in questione. Nel caso nessuno degli amici abbia ancora letto il libro, si ha la possibilit\'a, attraverso un pulsante, di \textbf{Raccomandare questo libro} ad uno o pi\'u amici \textbf{(Figure 7)}.
+
+
 \section{Considerazioni generali}
+
+\subsection{Design e Testo}
+Il design permette una navigazione molto piacevole, essendo chiaro e pulito. \'E un sito dedicato per il pubblico generale, dato che i colori utilizzati sono il bianco, grigio e marrone molto chiari, ma anche il nero e il marrone scuro per mantenere i contrasti.\\
+Il testo risulta invece molto leggibile, con un font che risulta essere costante nella parte centrale con diverse sfumature di colore. Il font che viene utilizzato \'e il "Merriweather", che viene rimpiazzato da "Georgia" o "Times New Roman" nel caso in cui il primo non fosse disponibile \textit{(Per conoscere questi dettagli si \'e sfruttata la modalit\'a Sviluppatore offera da Google Chrome)}. All'interno dell'header  come anche per i link all'interno della pagina invece possiamo notare come il font utilizzato sia "Lato".
+
+\subsection{404}
+\begin{figure}
+	\centering 
+	\includegraphics[width=16.5cm]{resources/404.png}
+	\caption{\textbf{Pagina 404.}}
+\end{figure}
+
+Dato che i link di una pagina potrebbero rompersi, \'e molto importante gestire questo inconveniente attraverso una pagina di errore 404 \textbf{(Figure 9)}. Goodreads presenta una pagina adibita allo scopo, ma fallisce nell'offrire informazioni soddisfacenti all'utente. Un semplice \textbf{"go to goodreads homepage"} non risulta essere sufficiente per utente che vorrebbe magari trovarsi dei consigli sui libri pi\'u letti del momento o i pi\'u recenti usciti.
+
+\subsection{Errore nella ricerca}
+\begin{figure}
+	\centering 
+	\includegraphics[width=16.5cm]{resources/errore_ricerca.png}
+	\caption{\textbf{Errore ricerca.}}
+\end{figure}
+
+La quasi totalit\'a degli utenti utilizza il tool di ricerca e risulta quindi essenziale tener conto del fatto che la ricerca possa andare a buon fine o meno. Se la ricerca va a buon fine ci ritroviamo con i risultati aspettati, altrimenti viene visualizzato ci\'o che viene raffigurato in \textbf{Figure 10}. Come per la pagina 404, anche qui Goodreads sceglie di non dare ulteriori suggerimenti all'utente. Questa scelta potrebbe sembrare rischiosa ma l'enorme molle di libri contenuti all'interno del database permette di trovare sempre i risultati necessari.
+
 
 \section{Conclusione}
 
+Alcuni miglioramenti potrebbero essere attuati, come ad esempio la pagina 404 oppure la pagina dei risultati di ricerca che produce nessun risultato. Un'altra cosa da rivedere sarebbe la localizzazione. In compenso per\'o, gli aspetti positivi di questo sito sono molti di pi\'u, permettendo cos\'i un esperienza di navigazione per l'utente molto piacevole. Tenendo conto del target, il design risulta essere pi\'u che adatto. Di conseguenza la mia valutazione \'e:
+
+\begin{center}
+	{\LARGE \textbf{\textbf{Voto: 9.0}}}
+\end{center}
+\newpage
+
+
 \section{Lista delle figure}
+
+\textbf{headerbar.png} -$>$ \href{<https://goodreads.com>}{Figure 1: La foto dell'header una volta loggati.} \\
+\textbf{homenotlogged\_1.png} -$>$ \href{<https://goodreads.com>}{Figure 2: Parte superiore della Homepage per un utente non registrato.} \\
+\textbf{homenotlogged\_2.png} -$>$ \href{<https://goodreads.com>}{Figure 3: Parte centrale della Homepage per un utente non loggato.
+}\\
+\textbf{homelogged\_1.png} -$>$ \href{<https://goodreads.com>}{Figure 4: Parte centrale della Homepage per un utente che si \'e appena loggato.
+}\\
+\textbf{newproducts.png} -$>$ \href{<https://www.goodreads.com/new_releases/2017/5>}{Figure 5: Nuovi release di libri nel mese corrente.} \\
+\textbf{choiceawards.png} -$>$ \href{<https://www.goodreads.com/choiceawards/best-books-2016>}{Figure 6: Pagina interna delle choice awards dove gli utenti possono vedere i migliori libri scelti dagli utenti stessi.
+}\\
+\textbf{book.png} -$>$ \href{<https://www.goodreads.com/book/show/23257231-the-amber-keeper>}{Figure 7: Pagina di un libro specifico che \'e gi\'a stato letto dall'utente.}\\
+\textbf{book\_notread.png} -$>$ \href{<https://www.goodreads.com/book/show/62823.After_the_Banquet>}{Figure 8: Sezione di una pagina di un libro che non \'e ancora stato letto.
+}\\
+\textbf{404.png} -$>$ \href{<https://www.goodreads.com/23333324234234342dss>}{Figure 9: Pagina 404.}\\
+\textbf{errore\_ricerca.png} -$>$ \href{<https://www.goodreads.com/search?q=asdasdsdew2323>}{Figure 10: Errore ricerca.}
+
+
 \end{document}
